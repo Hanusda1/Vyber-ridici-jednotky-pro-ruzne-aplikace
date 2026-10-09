@@ -209,11 +209,11 @@ Jste v roli projektanta automatizace. Zákazník poptává zhotovení řízení 
 
 | Typ signálu | Požadavek aplikace (kusy) | Popis signálů v aplikaci | Počet po započtení rezervy (+20 %) |
 | :--- | :--- | :--- | :--- |
-| **Digitální vstup (DI)** | `...` | `...` | `...` |
-| **Digitální výstup (DO) – reléový** | `...` | `...` | `...` |
-| **Digitální výstup (DO) – tranzistorový** | `...` | `...` | `...` |
-| **Analogový vstup (AI)** | `...` | `...` | `...` |
-| **Analogový výstup (AO)** | `...` | `...` | `...` |
+| **Digitální vstup (DI)** | `4` | `...` | `...` |
+| **Digitální výstup (DO) – reléový** | `2` | `...` | `...` |
+| **Digitální výstup (DO) – tranzistorový** | `1` | `...` | `...` |
+| **Analogový vstup (AI)** | `1` | `...` | `...` |
+| **Analogový výstup (AO)** | `1` | `...` | `...` |
 
 2. **Výběr konkrétního hardwaru z katalogu výrobce:**
    - Navrhněte konkrétní přístroj z praxe (např. *Siemens LOGO! 24RCE + rozšiřující moduly*, *Siemens S7-1200 CPU 1212C/1214C DC/DC/RLY*, *Schneider Modicon M221*, *Eaton easyE4-UC-12RC1*, *WAGO 750*, případně průmyslový IoT kontrolér typu *UniPi Neuron*).
