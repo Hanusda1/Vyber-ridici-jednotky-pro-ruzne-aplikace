@@ -218,22 +218,22 @@ Jste v roli projektanta automatizace. Zákazník poptává zhotovení řízení 
 2. **Výběr konkrétního hardwaru z katalogu výrobce:**
    - Navrhněte konkrétní přístroj z praxe (např. *Siemens LOGO! 24RCE + rozšiřující moduly*, *Siemens S7-1200 CPU 1212C/1214C DC/DC/RLY*, *Schneider Modicon M221*, *Eaton easyE4-UC-12RC1*, *WAGO 750*, případně průmyslový IoT kontrolér typu *UniPi Neuron*).
    - Uveďte:
-     - Výrobce a přesný model CPU: `...`
-     - Objednací kód (Part Number / Order Code): `...`
+     - Výrobce a přesný model CPU: `Siemens SIMATIC S7-1200, CPU 1212C DC/DC/Rly`
+     - Objednací kód (Part Number / Order Code): `6ES7212-1HE40-0XB0`
      - Rozšiřující moduly (pokud jsou nutné pro AI 4–20 mA nebo AO 0–10 V): `...`
-     - Napájecí napětí zvolené jednotky: `...`
-     - Jak je vyřešeno odesílání dat na dispečink: `...`
-     - Odkaz na technický list (datasheet): `...`
-     - Odkazy na další použité zdroje: `...`
+     - Napájecí napětí zvolené jednotky: `24 V DC`
+     - Jak je vyřešeno odesílání dat na dispečink: `Integrované rozhraní Ethernet / PROFINET (protokol Modbus TCP přes palubní RJ-45 port)`
+     - Odkaz na technický list (datasheet): `Siemens Industry Mall – S7-1200 CPU 1212C DC/DC/Rly`
+     - Odkazy na další použité zdroje: `Siemens S7-1200 System Manual, Katalog ST 70`
 
 3. **Technické ověření z datasheetu:**
-   - Zvládá zvolená jednotka garantovaný provoz při -20 °C? Doložte údaj z datasheetu: `...`
-   - Jakým způsobem spínáte cívku stykače 230 V AC (reléový výstup jednotky přímo, nebo přes pomocné mezilehlé relé)? Zdůvodněte: `...`
+   - Zvládá zvolená jednotka garantovaný provoz při -20 °C? Doložte údaj z datasheetu: `Ne, standardní rada S7-1200 má pracovní teplotu -20 °C až +60 °C pouze u verze SIPLUS (odolná verze: SIPLUS S7-1200 CPU 1212C DC/DC/Rly, obj. č. 6AG1212-1HE40-2XB0). Standardní verze má rozsah -20 °C až +60 °C (u novějších HW revizí FW 4.4+) nebo -20 °C při instalaci v rozváděči s vytápěním`
+   - Jakým způsobem spínáte cívku stykače 230 V AC (reléový výstup jednotky přímo, nebo přes pomocné mezilehlé relé)? Zdůvodněte: `Ochranuje se tím drahé relé PLC před proudovými špičkami při spínání induktivní zátěže (cívky stykače) a galvanicky se odděluje napěťová úroveň`
 
 4. **Krytí rozváděče:**
    - Jaké minimální krytí **IP skříně** zvolíte? Jak v rozváděči zajistíte provoz v mrazech -20 °C a v letních vedrech?
-     - Zvolené krytí rozváděče: `...`
-     - Teplotní management skříně: `...`
+     - Zvolené krytí rozváděče: `IP66 (venkovní nekrytý terén, ochrana proti prachu a intenzivně tryskající vodě/dešti)`
+     - Teplotní management skříně: `Zima (-20 °C): Topné těleso do rozváděče s termostatem (např. 15–50 W) pro udržení vnitřní teploty nad bodem mrazu a zabránění kondenzaci.	Léto (+45 °C): Ventilátor s filtrem řízený termostatem, případně stínicí stříška / dvouplášťová skříň chránící před přímým slunečním svitem.`
 
 > **Kritéria hodnocení úlohy 4 (bodování a známka):**
 > - :star: **Správnost I/O bilance a dimenzování (30 %):** Správný součet všech signálů, korektní rozlišení reléových vs. tranzistorových výstupů a správné započtení rezervy min. 20 %.
