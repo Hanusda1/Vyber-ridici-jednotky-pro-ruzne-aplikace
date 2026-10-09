@@ -277,10 +277,10 @@ Jako vedoucí inženýr jste převzal projekt po nezkušeném brigádníkovi, kt
 
 | Oblast auditu | Zjištěná vada v amatérském návrhu | Fyzikální mechanismus selhání (proč to selže) | Následek pro stroj nebo obsluhu |
 | :--- | :--- | :--- | :--- |
-| **Elektromagnetická kompatibilita (EMC)** | `...` | Napěťové špičky z indukční zátěže hydraulických ventilů způsobí restart MCU... | `...` |
-| **Mechanická a teplotní odolnost** | PLA plast a montáž na těleso lisu | `...` | `...` |
-| **Konektivita a propojení vodičů** | DuPont propojovací kabely bez aretace | `...` | `...` |
-| **Funkční bezpečnost (Safety)** | Nouzový stop řešený softwarově v čipu | `...` | `...` |
+| **Elektromagnetická kompatibilita (EMC)** | `Použití neprůmyslové desky Arduino Uno a spínání 400V ventilů hobby relé deskou` | Napěťové špičky z indukční zátěže hydraulických ventilů způsobí restart MCU... | `Ztráta kontroly nad lise, náhodná spuštění nebo zasekávání ventilů.` |
+| **Mechanická a teplotní odolnost** | PLA plast a montáž na těleso lisu | `PLA podléhá deformaci již při ~55–60 °C; silné vibrace lisu způsobí mechanické popraskání krabičky a uvolnění desky` | `Vypadnutí elektroniky, zkrat o kovové části stroje, mechanická destrukce řízení.` |
+| **Konektivita a propojení vodičů** | DuPont propojovací kabely bez aretace | `Dlouhodobé vibrace způsobené tvářecím strojem uvolní volně nasunuté piny (konektory neposkytují přídržnou sílu)` | `Přerušení signálů, výpadky řízení, možnost nahodilých zkratů nezajištěných vodičů.` |
+| **Funkční bezpečnost (Safety)** | Nouzový stop řešený softwarově v čipu | `Při zamrznutí procesoru (zaseknutí MCU v cyklu/EMC rušení) kód přerušení vůbec neproběhne` | `Neúčinnost tlačítka E-Stop v havárii; přímé ohrožení života obsluhy, zranění či smrt.` |
 
 2. **Návrh profesionálního nápravného řešení:**
    - Navrhněte, jakými certifikovanými průmyslovými komponenty tento celek nahradíte při zachování minimálního rozpočtu:
