@@ -223,8 +223,8 @@ Jste v roli projektanta automatizace. Zákazník poptává zhotovení řízení 
      - Rozšiřující moduly (pokud jsou nutné pro AI 4–20 mA nebo AO 0–10 V): `...`
      - Napájecí napětí zvolené jednotky: `24 V DC`
      - Jak je vyřešeno odesílání dat na dispečink: `Integrované rozhraní Ethernet / PROFINET (protokol Modbus TCP přes palubní RJ-45 port)`
-     - Odkaz na technický list (datasheet): `Siemens Industry Mall – S7-1200 CPU 1212C DC/DC/Rly`
-     - Odkazy na další použité zdroje: `Siemens S7-1200 System Manual, Katalog ST 70`
+     - Odkaz na technický list (datasheet): `Siemens Industry Mall – S7-1200 CPU 1212C DC/DC/Rly (https://sieportal.siemens.com/en-fi/products-services/detail/6ES72121HE400XB0?tree=CatalogTree)`
+     - Odkazy na další použité zdroje: `Siemens S7-1200 System Manual, Katalog ST 70 (PDF)`
 
 3. **Technické ověření z datasheetu:**
    - Zvládá zvolená jednotka garantovaný provoz při -20 °C? Doložte údaj z datasheetu: `Ne, standardní rada S7-1200 má pracovní teplotu -20 °C až +60 °C pouze u verze SIPLUS (odolná verze: SIPLUS S7-1200 CPU 1212C DC/DC/Rly, obj. č. 6AG1212-1HE40-2XB0). Standardní verze má rozsah -20 °C až +60 °C (u novějších HW revizí FW 4.4+) nebo -20 °C při instalaci v rozváděči s vytápěním`
