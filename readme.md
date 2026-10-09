@@ -284,9 +284,9 @@ Jako vedoucí inženýr jste převzal projekt po nezkušeném brigádníkovi, kt
 
 2. **Návrh profesionálního nápravného řešení:**
    - Navrhněte, jakými certifikovanými průmyslovými komponenty tento celek nahradíte při zachování minimálního rozpočtu:
-     - *Náhrada řídicí jednotky:* `...` *(např. certifikované průmyslové programovatelné relé s montáží na DIN lištu a krytím)*
-     - *Náhrada napájecího zdroje:* `...` *(např. stabilizovaný průmyslový zdroj 24 V DC na DIN lištu s ochranou proti přepětí)*
-     - *Způsob zapojení bezpečnostního okruhu (Safety):* Jak musí být podle norem zapojeno tlačítko Emergency Stop (E-Stop)? Smí být spoléháno pouze na software mikrokontroléru? Zdůvodněte: `...`
+     - *Náhrada řídicí jednotky:* `Siemens S7-1200 CPU 1212C` *(např. certifikované průmyslové programovatelné relé s montáží na DIN lištu a krytím)*
+     - *Náhrada napájecího zdroje:* `MEAN WELL HDR-30-24 nebo Siemens SITOP PSU100M` *(např. stabilizovaný průmyslový zdroj 24 V DC na DIN lištu s ochranou proti přepětí)*
+     - *Způsob zapojení bezpečnostního okruhu (Safety):* Jak musí být podle norem zapojeno tlačítko Emergency Stop (E-Stop)? Smí být spoléháno pouze na software mikrokontroléru? Zdůvodněte: `Podle bezpečnostních norem (např. ČSN EN ISO 13849-1 a IEC 62061) je softwarové přerušení v běžném (ne-safety) PLC/mikrokontroléru zcela nepřípustné. Při zamrznutí procesoru, chybě v kódu nebo EMC rušení by software nemusel zareagovat, což by vedlo k nemožnosti stroj bezpečně zastavit a přímo ohrozilo život obsluhy. Safety funkce musí fungovat vždy, nezávisle na stavu hlavního řídicího systému.`
 
 > **Kritéria hodnocení úlohy 5 (bodování a známka):**
 > - :star: **Odborná úroveň identifikace závad (35 %):** Přesná technická terminologie (např. elektromagnetická indukce, absence odrušovacích varistorů, skelný přechod PLA plastu při 60 °C, studené spoje a vyklepání konektorů vibracemi).
