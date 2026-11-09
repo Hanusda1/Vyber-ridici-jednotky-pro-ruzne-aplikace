@@ -255,7 +255,7 @@ Jste v roli projektanta automatizace. Zákazník poptává zhotovení řízení 
 Proč se u čerpadel v čistírnách odpadních vod a jímkách striktně upřednostňuje měření hladiny pomocí proudového signálu 4–20 mA před napěťovým signálem 0–10 V a proč se do jímky nepoužívá ultrazvukový senzor, pokud v ní vzniká hustá pěna?
 
 *Vaše odpověď:*
-`...`
+`Lepší odolnost proti rušení a lepší detekce při poruše kabelů; Pohlcení a rozptyl signálů při husté pěně`
 
 ---
 
